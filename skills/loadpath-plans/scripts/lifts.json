@@ -1,0 +1,2383 @@
+[
+ {
+  "id": "barbell-curl",
+  "name": "Barbell Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "cable-curl",
+  "name": "Cable Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "cable-hammer-curl",
+  "name": "Cable Hammer Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "concentration-curl",
+  "name": "Concentration Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-curl",
+  "name": "Dumbbell Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-overhead-triceps-extension",
+  "name": "Dumbbell Overhead Triceps Extension",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "ez-bar-curl",
+  "name": "EZ-Bar Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "ez-bar-skull-crusher",
+  "name": "EZ-Bar Skull Crusher",
+  "aliases": [
+   "EZ Bar Skullcrusher"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "hammer-curl",
+  "name": "Hammer Curl",
+  "aliases": [
+   "Neutral Grip Curl"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "incline-dumbbell-curl",
+  "name": "Incline Dumbbell Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "machine-preacher-curl",
+  "name": "Machine Preacher Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "machine-triceps-extension",
+  "name": "Machine Triceps Extension",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "overhead-rope-extension",
+  "name": "Overhead Rope Extension",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "overhead-triceps-extension",
+  "name": "Overhead Triceps Extension",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "preacher-curl",
+  "name": "Preacher Curl",
+  "aliases": [
+   "Preacher"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "reverse-curl",
+  "name": "Reverse Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "reverse-wrist-curl",
+  "name": "Reverse Wrist Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "reverse-grip-triceps-pressdown",
+  "name": "Reverse-Grip Triceps Pressdown",
+  "aliases": [
+   "Reverse Grip Pushdown"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "rope-triceps-pressdown",
+  "name": "Rope Triceps Pressdown",
+  "aliases": [
+   "Rope Pushdown",
+   "Rope Tricep Pushdown"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "single-arm-cable-curl",
+  "name": "Single-Arm Cable Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "single-arm-overhead-extension",
+  "name": "Single-Arm Overhead Extension",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "single-arm-triceps-pressdown",
+  "name": "Single-Arm Triceps Pressdown",
+  "aliases": [
+   "Single Arm Pushdown"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "skull-crusher",
+  "name": "Skull Crusher",
+  "aliases": [
+   "Skullcrusher",
+   "Lying Triceps Extension",
+   "French Press"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "spider-curl",
+  "name": "Spider Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "triceps-kickback",
+  "name": "Triceps Kickback",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "triceps-pressdown",
+  "name": "Triceps Pressdown",
+  "aliases": [
+   "Triceps Pushdown",
+   "Tricep Pushdown",
+   "Pushdown",
+   "Cable Pushdown"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "wrist-curl",
+  "name": "Wrist Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "zottman-curl",
+  "name": "Zottman Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "assault-bike",
+  "name": "Assault Bike",
+  "aliases": [
+   "Air Bike",
+   "Echo Bike",
+   "Fan Bike"
+  ],
+  "kind": "Cardio",
+  "equipment": "Bike"
+ },
+ {
+  "id": "bike",
+  "name": "Bike",
+  "aliases": [
+   "Cycling",
+   "Biking"
+  ],
+  "kind": "Cardio",
+  "equipment": "Bike"
+ },
+ {
+  "id": "easy-run",
+  "name": "Easy Run",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "elliptical",
+  "name": "Elliptical",
+  "aliases": [
+   "Cross Trainer"
+  ],
+  "kind": "Cardio",
+  "equipment": "Elliptical"
+ },
+ {
+  "id": "hike",
+  "name": "Hike",
+  "aliases": [
+   "Hiking"
+  ],
+  "kind": "Cardio",
+  "equipment": "Outdoor"
+ },
+ {
+  "id": "incline-walk",
+  "name": "Incline Walk",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "interval-run",
+  "name": "Interval Run",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "jump-rope",
+  "name": "Jump Rope",
+  "aliases": [
+   "Skipping",
+   "Skip Rope"
+  ],
+  "kind": "Cardio",
+  "equipment": "Jump Rope"
+ },
+ {
+  "id": "long-run",
+  "name": "Long Run",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "mountain-bike",
+  "name": "Mountain Bike",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Bike"
+ },
+ {
+  "id": "open-water-swim",
+  "name": "Open Water Swim",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Open Water"
+ },
+ {
+  "id": "pool-swim",
+  "name": "Pool Swim",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Pool"
+ },
+ {
+  "id": "road-bike",
+  "name": "Road Bike",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Bike"
+ },
+ {
+  "id": "row",
+  "name": "Row",
+  "aliases": [
+   "Erg",
+   "Rowing"
+  ],
+  "kind": "Cardio",
+  "equipment": "Rower"
+ },
+ {
+  "id": "rower-intervals",
+  "name": "Rower Intervals",
+  "aliases": [
+   "Erg Intervals"
+  ],
+  "kind": "Cardio",
+  "equipment": "Rower"
+ },
+ {
+  "id": "run",
+  "name": "Run",
+  "aliases": [
+   "Running"
+  ],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "ski-erg",
+  "name": "Ski Erg",
+  "aliases": [
+   "SkiErg"
+  ],
+  "kind": "Cardio",
+  "equipment": "Ski Erg"
+ },
+ {
+  "id": "ski-erg-intervals",
+  "name": "Ski Erg Intervals",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Ski Erg"
+ },
+ {
+  "id": "spin-bike",
+  "name": "Spin Bike",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Bike"
+ },
+ {
+  "id": "stair-climber",
+  "name": "Stair Climber",
+  "aliases": [
+   "StairMaster",
+   "Stairmill"
+  ],
+  "kind": "Cardio",
+  "equipment": "Stair Climber"
+ },
+ {
+  "id": "swim",
+  "name": "Swim",
+  "aliases": [
+   "Swimming"
+  ],
+  "kind": "Cardio",
+  "equipment": "Pool"
+ },
+ {
+  "id": "tempo-run",
+  "name": "Tempo Run",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "trail-run",
+  "name": "Trail Run",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Outdoor"
+ },
+ {
+  "id": "treadmill-run",
+  "name": "Treadmill Run",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "walk",
+  "name": "Walk",
+  "aliases": [
+   "Walking"
+  ],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "ab-wheel",
+  "name": "Ab Wheel",
+  "aliases": [
+   "Ab Rollout",
+   "Wheel Rollout"
+  ],
+  "kind": "Strength",
+  "equipment": "Ab Wheel"
+ },
+ {
+  "id": "bicycle-crunch",
+  "name": "Bicycle Crunch",
+  "aliases": [
+   "Bicycles"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "bird-dog",
+  "name": "Bird Dog",
+  "aliases": [
+   "Birddog"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "cable-crunch",
+  "name": "Cable Crunch",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "cable-woodchopper",
+  "name": "Cable Woodchopper",
+  "aliases": [
+   "Woodchop",
+   "Wood Chop"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "copenhagen-plank",
+  "name": "Copenhagen Plank",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "crunch",
+  "name": "Crunch",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "dead-bug",
+  "name": "Dead Bug",
+  "aliases": [
+   "Deadbug"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "decline-sit-up",
+  "name": "Decline Sit-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "farmer-carry",
+  "name": "Farmer Carry",
+  "aliases": [
+   "Farmers Walk",
+   "Farmer's Walk",
+   "Farmers Carry"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "farmer-carry-heavy",
+  "name": "Farmer Carry (Heavy)",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "flutter-kick",
+  "name": "Flutter Kick",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "hanging-knee-raise",
+  "name": "Hanging Knee Raise",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "hanging-leg-raise",
+  "name": "Hanging Leg Raise",
+  "aliases": [
+   "HLR"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "hollow-hold",
+  "name": "Hollow Hold",
+  "aliases": [
+   "Hollow Body Hold"
+  ],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "knees-to-chest",
+  "name": "Knees to Chest",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "l-sit",
+  "name": "L-Sit",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Rings"
+ },
+ {
+  "id": "machine-crunch",
+  "name": "Machine Crunch",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "mountain-climber",
+  "name": "Mountain Climber",
+  "aliases": [
+   "Mountain Climbers"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "overhead-carry",
+  "name": "Overhead Carry",
+  "aliases": [
+   "Waiter Walk",
+   "Overhead Walk"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "pallof-press",
+  "name": "Pallof Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "plank",
+  "name": "Plank",
+  "aliases": [
+   "Front Plank",
+   "Forearm Plank"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "plank-up-down",
+  "name": "Plank Up-Down",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "renegade-row",
+  "name": "Renegade Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "reverse-crunch",
+  "name": "Reverse Crunch",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "russian-twist",
+  "name": "Russian Twist",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "sandbag-carry",
+  "name": "Sandbag Carry",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Sandbag"
+ },
+ {
+  "id": "side-plank",
+  "name": "Side Plank",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "sit-up",
+  "name": "Sit-Up",
+  "aliases": [
+   "Situp",
+   "Sit Ups"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "suitcase-carry",
+  "name": "Suitcase Carry",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "superman",
+  "name": "Superman",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "toes-to-bar",
+  "name": "Toes to Bar",
+  "aliases": [
+   "T2B",
+   "TTB"
+  ],
+  "kind": "Strength",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "v-up",
+  "name": "V-Up",
+  "aliases": [
+   "V Up",
+   "Vup"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "battle-ropes",
+  "name": "Battle Ropes",
+  "aliases": [
+   "Battle Rope"
+  ],
+  "kind": "Time",
+  "equipment": "Battle Ropes"
+ },
+ {
+  "id": "bear-crawl",
+  "name": "Bear Crawl",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "burpee",
+  "name": "Burpee",
+  "aliases": [
+   "Burpees"
+  ],
+  "kind": "Cardio",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "burpee-box-jump-over",
+  "name": "Burpee Box Jump Over",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Box"
+ },
+ {
+  "id": "devil-press",
+  "name": "Devil Press",
+  "aliases": [
+   "Devils Press"
+  ],
+  "kind": "Cardio",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-snatch-alternating",
+  "name": "Dumbbell Snatch (Alternating)",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-thruster",
+  "name": "Dumbbell Thruster",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "hang-clean",
+  "name": "Hang Clean",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "hang-snatch",
+  "name": "Hang Snatch",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "kettlebell-clean",
+  "name": "Kettlebell Clean",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Kettlebell"
+ },
+ {
+  "id": "kettlebell-snatch",
+  "name": "Kettlebell Snatch",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Kettlebell"
+ },
+ {
+  "id": "man-maker",
+  "name": "Man Maker",
+  "aliases": [
+   "Manmaker"
+  ],
+  "kind": "Cardio",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "medicine-ball-slam",
+  "name": "Medicine Ball Slam",
+  "aliases": [
+   "Ball Slam",
+   "Slam Ball"
+  ],
+  "kind": "Cardio",
+  "equipment": "Medicine Ball"
+ },
+ {
+  "id": "overhead-walking-lunge",
+  "name": "Overhead Walking Lunge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "power-clean",
+  "name": "Power Clean",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "power-snatch",
+  "name": "Power Snatch",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "sandbag-clean",
+  "name": "Sandbag Clean",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Sandbag"
+ },
+ {
+  "id": "squat-clean",
+  "name": "Squat Clean",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "thruster",
+  "name": "Thruster",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "turkish-get-up",
+  "name": "Turkish Get-Up",
+  "aliases": [
+   "TGU",
+   "Get Up"
+  ],
+  "kind": "Strength",
+  "equipment": "Kettlebell"
+ },
+ {
+  "id": "wall-ball",
+  "name": "Wall Ball",
+  "aliases": [
+   "Wall Ball Shot"
+  ],
+  "kind": "Cardio",
+  "equipment": "Medicine Ball"
+ },
+ {
+  "id": "back-squat",
+  "name": "Back Squat",
+  "aliases": [
+   "Squat",
+   "Barbell Squat",
+   "High Bar Squat"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "barbell-lunge",
+  "name": "Barbell Lunge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "belt-squat",
+  "name": "Belt Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "box-jump",
+  "name": "Box Jump",
+  "aliases": [
+   "Box Jumps"
+  ],
+  "kind": "Cardio",
+  "equipment": "Box"
+ },
+ {
+  "id": "box-squat",
+  "name": "Box Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "box-step-over",
+  "name": "Box Step Over",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Box"
+ },
+ {
+  "id": "bulgarian-split-squat",
+  "name": "Bulgarian Split Squat",
+  "aliases": [
+   "BSS",
+   "Rear Foot Elevated Split Squat",
+   "RFESS"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "cable-hip-abduction",
+  "name": "Cable Hip Abduction",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "calf-press-on-leg-press",
+  "name": "Calf Press on Leg Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "cossack-squat",
+  "name": "Cossack Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "curtsy-lunge",
+  "name": "Curtsy Lunge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "dumbbell-bulgarian-split-squat",
+  "name": "Dumbbell Bulgarian Split Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-front-squat",
+  "name": "Dumbbell Front Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-lunge",
+  "name": "Dumbbell Lunge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-step-up",
+  "name": "Dumbbell Step-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "front-squat",
+  "name": "Front Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "glute-kickback",
+  "name": "Glute Kickback",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "goblet-squat",
+  "name": "Goblet Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "hack-squat",
+  "name": "Hack Squat",
+  "aliases": [
+   "Machine Hack Squat"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "hip-abduction-machine",
+  "name": "Hip Abduction Machine",
+  "aliases": [
+   "Abductor Machine"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "hip-adduction-machine",
+  "name": "Hip Adduction Machine",
+  "aliases": [
+   "Adductor Machine"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "lateral-lunge",
+  "name": "Lateral Lunge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "leg-extension",
+  "name": "Leg Extension",
+  "aliases": [
+   "Quad Extension"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "leg-press",
+  "name": "Leg Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "pause-squat",
+  "name": "Pause Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "pendulum-squat",
+  "name": "Pendulum Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "pistol-squat",
+  "name": "Pistol Squat",
+  "aliases": [
+   "Single Leg Squat"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "reverse-lunge",
+  "name": "Reverse Lunge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "seated-calf-raise",
+  "name": "Seated Calf Raise",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "single-leg-calf-raise",
+  "name": "Single-Leg Calf Raise",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "single-leg-leg-extension",
+  "name": "Single-Leg Leg Extension",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "single-leg-leg-press",
+  "name": "Single-Leg Leg Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "sissy-squat",
+  "name": "Sissy Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "skater-squat",
+  "name": "Skater Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "sled-drag",
+  "name": "Sled Drag",
+  "aliases": [
+   "Prowler Drag"
+  ],
+  "kind": "Strength",
+  "equipment": "Sled"
+ },
+ {
+  "id": "sled-push",
+  "name": "Sled Push",
+  "aliases": [
+   "Prowler Push",
+   "Prowler"
+  ],
+  "kind": "Strength",
+  "equipment": "Sled"
+ },
+ {
+  "id": "smith-machine-calf-raise",
+  "name": "Smith Machine Calf Raise",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Smith Machine"
+ },
+ {
+  "id": "smith-machine-lunge",
+  "name": "Smith Machine Lunge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Smith Machine"
+ },
+ {
+  "id": "smith-machine-squat",
+  "name": "Smith Machine Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Smith Machine"
+ },
+ {
+  "id": "split-squat",
+  "name": "Split Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "standing-calf-raise",
+  "name": "Standing Calf Raise",
+  "aliases": [
+   "Calf Raise"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "step-down",
+  "name": "Step-Down",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "step-up",
+  "name": "Step-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "walking-lunge",
+  "name": "Walking Lunge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "wall-sit",
+  "name": "Wall Sit",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "zercher-squat",
+  "name": "Zercher Squat",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "b-stance-romanian-deadlift",
+  "name": "B-Stance Romanian Deadlift",
+  "aliases": [
+   "B Stance RDL"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "back-extension",
+  "name": "Back Extension",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "barbell-glute-bridge",
+  "name": "Barbell Glute Bridge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "cable-pull-through",
+  "name": "Cable Pull-Through",
+  "aliases": [
+   "Pull Through"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "deadlift",
+  "name": "Deadlift",
+  "aliases": [
+   "Conventional Deadlift"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "deficit-deadlift",
+  "name": "Deficit Deadlift",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "dumbbell-romanian-deadlift",
+  "name": "Dumbbell Romanian Deadlift",
+  "aliases": [
+   "Dumbbell RDL"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "glute-bridge",
+  "name": "Glute Bridge",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "glute-ham-raise",
+  "name": "Glute Ham Raise",
+  "aliases": [
+   "GHR",
+   "GHD Raise"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "good-morning",
+  "name": "Good Morning",
+  "aliases": [
+   "Good Mornings"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "hip-thrust",
+  "name": "Hip Thrust",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "kettlebell-swing",
+  "name": "Kettlebell Swing",
+  "aliases": [
+   "Russian Swing"
+  ],
+  "kind": "Strength",
+  "equipment": "Kettlebell"
+ },
+ {
+  "id": "leg-curl",
+  "name": "Leg Curl",
+  "aliases": [
+   "Hamstring Curl"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "lying-leg-curl",
+  "name": "Lying Leg Curl",
+  "aliases": [
+   "Lying Hamstring Curl"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "machine-hip-thrust",
+  "name": "Machine Hip Thrust",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "nordic-hamstring-curl",
+  "name": "Nordic Hamstring Curl",
+  "aliases": [
+   "Nordic Curl",
+   "Nordics"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "rack-pull",
+  "name": "Rack Pull",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "reverse-hyperextension",
+  "name": "Reverse Hyperextension",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "romanian-deadlift",
+  "name": "Romanian Deadlift",
+  "aliases": [
+   "RDL"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "seated-leg-curl",
+  "name": "Seated Leg Curl",
+  "aliases": [
+   "Seated Hamstring Curl"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "single-arm-kettlebell-swing",
+  "name": "Single-Arm Kettlebell Swing",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Kettlebell"
+ },
+ {
+  "id": "single-leg-hip-thrust",
+  "name": "Single-Leg Hip Thrust",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "single-leg-leg-curl",
+  "name": "Single-Leg Leg Curl",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "single-leg-romanian-deadlift",
+  "name": "Single-Leg Romanian Deadlift",
+  "aliases": [
+   "Single Leg RDL",
+   "SLRDL"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "snatch-grip-deadlift",
+  "name": "Snatch-Grip Deadlift",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "stiff-leg-deadlift",
+  "name": "Stiff-Leg Deadlift",
+  "aliases": [
+   "SLDL",
+   "Straight Leg Deadlift",
+   "Stiff Legged Deadlift"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "sumo-deadlift",
+  "name": "Sumo Deadlift",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "trap-bar-deadlift",
+  "name": "Trap Bar Deadlift",
+  "aliases": [
+   "Hex Bar Deadlift"
+  ],
+  "kind": "Strength",
+  "equipment": "Trap Bar"
+ },
+ {
+  "id": "ankle-mobility-drill",
+  "name": "Ankle Mobility Drill",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "band-pull-apart",
+  "name": "Band Pull Apart",
+  "aliases": [],
+  "kind": "Reps",
+  "equipment": "Band"
+ },
+ {
+  "id": "calf-stretch",
+  "name": "Calf Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "cat-cow-stretch",
+  "name": "Cat-Cow Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "chest-opener-stretch",
+  "name": "Chest Opener Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "child-s-pose",
+  "name": "Child's Pose",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "dead-hang",
+  "name": "Dead Hang",
+  "aliases": [
+   "Bar Hang"
+  ],
+  "kind": "Time",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "downward-dog",
+  "name": "Downward Dog",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "glute-bridge-hold",
+  "name": "Glute Bridge Hold",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "glute-stretch",
+  "name": "Glute Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "hamstring-stretch",
+  "name": "Hamstring Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "happy-baby-pose",
+  "name": "Happy Baby Pose",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "hip-flexor-stretch",
+  "name": "Hip Flexor Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "incline-walk-recovery",
+  "name": "Incline Walk (Recovery)",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "lat-stretch",
+  "name": "Lat Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "low-lunge-stretch",
+  "name": "Low Lunge Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "pigeon-stretch",
+  "name": "Pigeon Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "quad-stretch",
+  "name": "Quad Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "seated-forward-fold",
+  "name": "Seated Forward Fold",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "shoulder-dislocates",
+  "name": "Shoulder Dislocates",
+  "aliases": [],
+  "kind": "Reps",
+  "equipment": "Band"
+ },
+ {
+  "id": "standing-forward-fold",
+  "name": "Standing Forward Fold",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "stretching",
+  "name": "Stretching",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "thoracic-rotation",
+  "name": "Thoracic Rotation",
+  "aliases": [],
+  "kind": "Reps",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "thread-the-needle",
+  "name": "Thread the Needle",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "world-s-greatest-stretch",
+  "name": "World's Greatest Stretch",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "yoga",
+  "name": "Yoga",
+  "aliases": [],
+  "kind": "Time",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "zone-2-bike",
+  "name": "Zone 2 Bike",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Bike"
+ },
+ {
+  "id": "zone-2-row",
+  "name": "Zone 2 Row",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Rower"
+ },
+ {
+  "id": "zone-2-run",
+  "name": "Zone 2 Run",
+  "aliases": [],
+  "kind": "Cardio",
+  "equipment": "Treadmill / Run"
+ },
+ {
+  "id": "assisted-pull-up-machine",
+  "name": "Assisted Pull-Up Machine",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "bar-muscle-up",
+  "name": "Bar Muscle-Up",
+  "aliases": [
+   "BMU"
+  ],
+  "kind": "Strength",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "barbell-row",
+  "name": "Barbell Row",
+  "aliases": [
+   "Bent Over Row",
+   "Bent-Over Row",
+   "Barbell Bent Over Row"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "barbell-shrug",
+  "name": "Barbell Shrug",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "cable-rear-delt-fly",
+  "name": "Cable Rear Delt Fly",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "cable-shrug",
+  "name": "Cable Shrug",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "chest-supported-row",
+  "name": "Chest Supported Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "chest-to-bar-pull-up",
+  "name": "Chest to Bar Pull-Up",
+  "aliases": [
+   "C2B",
+   "CTB"
+  ],
+  "kind": "Strength",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "chin-up",
+  "name": "Chin-Up",
+  "aliases": [
+   "Chinup",
+   "Chin Ups",
+   "Chinups"
+  ],
+  "kind": "Strength",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "close-grip-lat-pulldown",
+  "name": "Close-Grip Lat Pulldown",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "face-pull",
+  "name": "Face Pull",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "inverted-row",
+  "name": "Inverted Row",
+  "aliases": [
+   "Body Row",
+   "Australian Pull-Up"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "kipping-pull-up",
+  "name": "Kipping Pull-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "landmine-row",
+  "name": "Landmine Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "lat-pulldown",
+  "name": "Lat Pulldown",
+  "aliases": [
+   "Pulldown"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "machine-row",
+  "name": "Machine Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "meadows-row",
+  "name": "Meadows Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "muscle-up",
+  "name": "Muscle-Up",
+  "aliases": [
+   "Muscleup"
+  ],
+  "kind": "Strength",
+  "equipment": "Rings"
+ },
+ {
+  "id": "neutral-grip-lat-pulldown",
+  "name": "Neutral-Grip Lat Pulldown",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "neutral-grip-pull-up",
+  "name": "Neutral-Grip Pull-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "pendlay-row",
+  "name": "Pendlay Row",
+  "aliases": [
+   "Dead Stop Row"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "pull-up",
+  "name": "Pull-Up",
+  "aliases": [
+   "Pullup",
+   "Pull Ups",
+   "Pullups",
+   "Assisted Pull-Up",
+   "Weighted Pull-Up"
+  ],
+  "kind": "Strength",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "rear-delt-fly",
+  "name": "Rear Delt Fly",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "reverse-pec-deck",
+  "name": "Reverse Pec Deck",
+  "aliases": [
+   "Rear Delt Machine",
+   "Reverse Fly Machine"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "reverse-grip-barbell-row",
+  "name": "Reverse-Grip Barbell Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "ring-row",
+  "name": "Ring Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Rings"
+ },
+ {
+  "id": "seal-row",
+  "name": "Seal Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "seated-cable-row",
+  "name": "Seated Cable Row",
+  "aliases": [
+   "Cable Row"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "shrug",
+  "name": "Shrug",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "single-arm-cable-row",
+  "name": "Single-Arm Cable Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "single-arm-dumbbell-row",
+  "name": "Single-Arm Dumbbell Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "single-arm-lat-pulldown",
+  "name": "Single-Arm Lat Pulldown",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "sled-pull",
+  "name": "Sled Pull",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Sled"
+ },
+ {
+  "id": "smith-machine-row",
+  "name": "Smith Machine Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Smith Machine"
+ },
+ {
+  "id": "straight-arm-pulldown",
+  "name": "Straight-Arm Pulldown",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "t-bar-row",
+  "name": "T-Bar Row",
+  "aliases": [
+   "TBar Row"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "upright-row",
+  "name": "Upright Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "wide-grip-lat-pulldown",
+  "name": "Wide-Grip Lat Pulldown",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "wide-grip-pull-up",
+  "name": "Wide-Grip Pull-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Pull-Up Bar"
+ },
+ {
+  "id": "wide-grip-seated-cable-row",
+  "name": "Wide-Grip Seated Cable Row",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "arnold-press",
+  "name": "Arnold Press",
+  "aliases": [
+   "Arnolds"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "bench-dip",
+  "name": "Bench Dip",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "bench-press",
+  "name": "Bench Press",
+  "aliases": [
+   "Barbell Bench Press",
+   "Flat Bench",
+   "Flat Bench Press"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "cable-crossover",
+  "name": "Cable Crossover",
+  "aliases": [
+   "Crossover"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "cable-fly",
+  "name": "Cable Fly",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "cable-front-raise",
+  "name": "Cable Front Raise",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "cable-lateral-raise",
+  "name": "Cable Lateral Raise",
+  "aliases": [
+   "Cable Lat Raise"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "chest-fly",
+  "name": "Chest Fly",
+  "aliases": [
+   "Dumbbell Fly",
+   "Flye"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "close-grip-bench-press",
+  "name": "Close-Grip Bench Press",
+  "aliases": [
+   "CGBP",
+   "Close Grip Bench"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "close-grip-push-up",
+  "name": "Close-Grip Push-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "decline-bench-press",
+  "name": "Decline Bench Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "decline-dumbbell-press",
+  "name": "Decline Dumbbell Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dip",
+  "name": "Dip",
+  "aliases": [
+   "Dips",
+   "Weighted Dip",
+   "Assisted Dip",
+   "Chest Dip",
+   "Tricep Dip"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "dumbbell-bench-press",
+  "name": "Dumbbell Bench Press",
+  "aliases": [
+   "Flat Dumbbell Press"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-floor-press",
+  "name": "Dumbbell Floor Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-pullover",
+  "name": "Dumbbell Pullover",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "dumbbell-shoulder-press",
+  "name": "Dumbbell Shoulder Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "front-raise",
+  "name": "Front Raise",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "handstand-hold",
+  "name": "Handstand Hold",
+  "aliases": [
+   "Handstand"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "handstand-push-up",
+  "name": "Handstand Push-Up",
+  "aliases": [
+   "HSPU"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "incline-bench-press",
+  "name": "Incline Bench Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "incline-cable-fly",
+  "name": "Incline Cable Fly",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "incline-dumbbell-press",
+  "name": "Incline Dumbbell Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "incline-machine-press",
+  "name": "Incline Machine Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "incline-neutral-grip-dumbbell-press",
+  "name": "Incline Neutral-Grip Dumbbell Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "incline-push-up",
+  "name": "Incline Push-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "landmine-press",
+  "name": "Landmine Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "lateral-raise",
+  "name": "Lateral Raise",
+  "aliases": [
+   "Lat Raise",
+   "Side Raise",
+   "Side Lateral Raise"
+  ],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "leaning-cable-lateral-raise",
+  "name": "Leaning Cable Lateral Raise",
+  "aliases": [
+   "Leaning Lat Raise"
+  ],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "low-to-high-cable-fly",
+  "name": "Low-to-High Cable Fly",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "machine-chest-press",
+  "name": "Machine Chest Press",
+  "aliases": [
+   "Chest Press Machine"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "machine-lateral-raise",
+  "name": "Machine Lateral Raise",
+  "aliases": [
+   "Machine Lat Raise"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "machine-shoulder-press",
+  "name": "Machine Shoulder Press",
+  "aliases": [
+   "Shoulder Press Machine"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "neutral-grip-dumbbell-bench-press",
+  "name": "Neutral-Grip Dumbbell Bench Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "neutral-grip-dumbbell-shoulder-press",
+  "name": "Neutral-Grip Dumbbell Shoulder Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "overhead-press",
+  "name": "Overhead Press",
+  "aliases": [
+   "OHP",
+   "Shoulder Press",
+   "Military Press",
+   "Standing Press"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "pec-deck-fly",
+  "name": "Pec Deck Fly",
+  "aliases": [
+   "Pec Fly",
+   "Machine Fly",
+   "Butterfly"
+  ],
+  "kind": "Strength",
+  "equipment": "Machine"
+ },
+ {
+  "id": "pike-push-up",
+  "name": "Pike Push-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "push-jerk",
+  "name": "Push Jerk",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "push-press",
+  "name": "Push Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "push-up",
+  "name": "Push-Up",
+  "aliases": [
+   "Pushup",
+   "Push Ups",
+   "Pushups",
+   "Press-Up"
+  ],
+  "kind": "Strength",
+  "equipment": "Bodyweight"
+ },
+ {
+  "id": "ring-dip",
+  "name": "Ring Dip",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Rings"
+ },
+ {
+  "id": "ring-push-up",
+  "name": "Ring Push-Up",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Rings"
+ },
+ {
+  "id": "seated-barbell-overhead-press",
+  "name": "Seated Barbell Overhead Press",
+  "aliases": [
+   "Seated OHP"
+  ],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "seated-dumbbell-press",
+  "name": "Seated Dumbbell Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "single-arm-cable-chest-press",
+  "name": "Single-Arm Cable Chest Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Cable"
+ },
+ {
+  "id": "single-arm-dumbbell-bench-press",
+  "name": "Single-Arm Dumbbell Bench Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "single-arm-dumbbell-shoulder-press",
+  "name": "Single-Arm Dumbbell Shoulder Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Dumbbell"
+ },
+ {
+  "id": "single-arm-landmine-press",
+  "name": "Single-Arm Landmine Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "smith-machine-bench-press",
+  "name": "Smith Machine Bench Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Smith Machine"
+ },
+ {
+  "id": "smith-machine-shoulder-press",
+  "name": "Smith Machine Shoulder Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Smith Machine"
+ },
+ {
+  "id": "split-jerk",
+  "name": "Split Jerk",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ },
+ {
+  "id": "z-press",
+  "name": "Z Press",
+  "aliases": [],
+  "kind": "Strength",
+  "equipment": "Barbell"
+ }
+]

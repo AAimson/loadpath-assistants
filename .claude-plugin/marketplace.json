@@ -1,0 +1,7 @@
+{
+  "name": "loadpath",
+  "owner": { "name": "Loadpath" },
+  "plugins": [
+    { "name": "loadpath", "source": "./", "description": "Build a strength training plan and open it in Loadpath." }
+  ]
+}
