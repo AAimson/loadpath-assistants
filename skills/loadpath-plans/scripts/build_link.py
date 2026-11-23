@@ -40,6 +40,47 @@ def lift_kind(lift):
     return "strength"
 
 
+FIELDS = {
+    "plan": {"loadpath", "unit", "workouts", "program"},
+    "workout": {"name", "lifts", "groups"},
+    "lift": {"lift", "id", "sets", "reps", "repsTo", "rule", "step", "weight", "rest", "warmups", "amrap",
+             "group", "seconds", "minutes", "km", "kcal", "setList", "repsOnly", "stages"},
+    "set": {"reps", "amrap", "top", "backoff", "drops", "seconds", "minutes", "km", "kcal", "percent", "wave",
+            "waveReps"},
+    "group": {"group", "name", "rounds", "rest", "restAfter", "order"},
+    "program": {"name", "detail", "repeat", "weeks", "autoDeload"},
+    "week": {"name", "days", "wave", "deload", "deloadFewerSets"},
+}
+
+
+def unknown_fields(plan):
+    """Fields Loadpath doesn't read: it would drop them, so the plan saves without them."""
+    found = []
+
+    def check(obj, kind, where):
+        if isinstance(obj, dict):
+            found.extend(f'{where}: "{k}" is not a Loadpath field; Loadpath would drop it.'
+                         for k in obj if k not in FIELDS[kind])
+
+    check(plan, "plan", "The plan")
+    for w in plan.get("workouts") or []:
+        wn = f'Workout "{w.get("name")}"' if isinstance(w, dict) else "A workout"
+        check(w, "workout", wn)
+        for g in (w.get("groups") or []) if isinstance(w, dict) else []:
+            check(g, "group", f"{wn}, a group")
+        for lift in (w.get("lifts") or []) if isinstance(w, dict) else []:
+            ln = f'"{lift.get("lift")}" in {wn}' if isinstance(lift, dict) else wn
+            check(lift, "lift", ln)
+            for s in (lift.get("setList") or []) if isinstance(lift, dict) else []:
+                check(s, "set", f"{ln}, a set")
+    program = plan.get("program")
+    if isinstance(program, dict):
+        check(program, "program", "The program")
+        for i, week in enumerate(program.get("weeks") or [], 1):
+            check(week, "week", f"Week {i}")
+    return found
+
+
 CATALOGUE_KIND = {"Strength": "strength", "Reps": "strength", "Time": "timed", "Cardio": "cardio"}
 
 
@@ -54,7 +95,7 @@ def load_catalogue():
 
 
 def check(plan):
-    errors, warnings = [], []
+    errors, warnings = [], unknown_fields(plan)
     if plan.get("loadpath") != 1:
         errors.append('"loadpath" must be 1.')
     workouts = plan.get("workouts")

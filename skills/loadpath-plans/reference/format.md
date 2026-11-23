@@ -18,12 +18,12 @@ c = zlib.compressobj(9, zlib.DEFLATED, -15)
 link = "https://getloadpath.com/import#z=" + base64.urlsafe_b64encode(c.compress(raw) + c.flush()).decode().rstrip("=")
 ```
 
-How a link opens: Loadpath accepts `https://getloadpath.com/import#…` when it is opened in
-the app, and `loadpath://import#…` (same payload) opens the app directly. Until the site's
-association file and the app's Associated Domains ship, tapping the `https` link opens the
-web page rather than the app; use the `loadpath://` form, or give the plan as text. The
-payload sits after the `#`, which a browser never sends, so a plan never reaches the
-site's server.
+How a link opens: on an iPhone with Loadpath 2.7 or later, tapping
+`https://getloadpath.com/import#…` opens the plan in the app. Anywhere else it opens a web
+page that shows the plan, with buttons to open it in Loadpath or get the app. Give the
+`https` link. `loadpath://import#…` (same payload) also opens the app, but does nothing
+where Loadpath isn't installed. The payload sits after the `#`, which a browser never
+sends, so a plan never reaches the site's server.
 
 ## The document
 
@@ -36,9 +36,9 @@ site's server.
       "name": "Upper A",
       "lifts": [
         { "lift": "Bench Press", "sets": 3, "reps": 5, "rule": "linear", "step": 2.5, "rest": 180, "warmups": 2 },
-        { "lift": "Dumbbell Row", "sets": 3, "reps": 8, "repsTo": 12, "group": "A" },
+        { "lift": "Single-Arm Dumbbell Row", "sets": 3, "reps": 8, "repsTo": 12, "group": "A" },
         { "lift": "Face Pull", "sets": 3, "reps": 12, "repsTo": 15, "group": "A" },
-        { "lift": "Dead Hang Hold", "sets": 3, "seconds": 45 },
+        { "lift": "Dead Hang", "sets": 3, "seconds": 45 },
         { "lift": "Zone 2 Bike", "minutes": 20 }
       ]
     }
@@ -56,7 +56,7 @@ site's server.
 | `loadpath` | The format's version: `1` for everything on this page. Loadpath refuses a number it doesn't know and asks the lifter to update. |
 | `unit` | `"kg"` or `"lb"`, for every `weight` and `step`. **Required** when the plan has either: Loadpath refuses a weight or a step with no unit rather than guess, and refuses any other unit. |
 | `workouts` | One or more, each with a `name` and at least one lift, in order. |
-| `program` | Optional. Its `weeks` each list `days`: a workout's `name`, or `null` for a rest day. A day naming a workout that isn't in `workouts` is refused. `repeat` is how many times the weeks run; `0` or absent runs until the lifter ends it. |
+| `program` | Optional. Its `weeks` each list `days`: a workout's `name`, or `null` for a rest day. A day naming a workout that isn't in `workouts` is refused. The days run in order, rest days included, so list all seven for a calendar week. A week may have a `name`; the program may have a `detail`, a line describing it. `repeat` is how many times the weeks run; `0` or absent runs until the lifter ends it. |
 
 A lift:
 
@@ -165,7 +165,7 @@ settings in `groups`; leave a group out and it is a superset with Loadpath's def
 | `restAfter` | `"round"` (after each round, the default), `"each"` (after every lift) or `"none"`. |
 | `order` | `"alternate"` (A1, B1, A2, B2, the default) or `"sequential"` (all of A, then all of B). |
 
-Loadpath ignores any field it doesn't know.
+Loadpath ignores any field it doesn't know, so a field this page doesn't describe is lost.
 
 ### Limits
 
