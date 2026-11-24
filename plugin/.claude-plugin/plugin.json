@@ -1,6 +1,6 @@
 {
   "name": "loadpath",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Build a strength training workout or program and get a link that opens it in Loadpath, the iPhone strength training app.",
   "author": { "name": "Loadpath" },
   "homepage": "https://getloadpath.com",
