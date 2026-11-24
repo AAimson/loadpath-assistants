@@ -2,7 +2,8 @@
 
 A Claude plugin with one skill, `loadpath-plans`: ask Claude for a workout or a program
 and get a link that opens it in [Loadpath](https://getloadpath.com), the iPhone strength
-training app. Nothing is saved until you tap Save in the app.
+training app. Nothing is saved until you tap Save in the app. Plans open in Loadpath 2.7
+or later.
 
 ## Add it
 
@@ -11,3 +12,16 @@ training app. Nothing is saved until you tap Save in the app.
   Customize → Skills (code execution must be on).
 - **Claude Code:** `/plugin marketplace add AAimson/loadpath-claude`, then
   `/plugin install loadpath@loadpath`.
+
+## Keep it in step with the app
+
+`reference/format.md`, `reference/lifts.md` and `scripts/lifts.json` are copies of what the
+app defines. After a change to the app's `ExerciseCatalog.json` or `docs/plan-format.md`:
+
+```bash
+python3 tools/sync_from_app.py ../fitness-app
+python3 -m unittest discover tests
+```
+
+The tests mirror the fixtures in the app's `PlanDocumentTests.swift`; when those change,
+change `tests/test_build_link.py` to match.

@@ -527,7 +527,7 @@
   "name": "Hanging Knee Raise",
   "aliases": [],
   "kind": "Strength",
-  "equipment": "Dumbbell"
+  "equipment": "Pull-Up Bar"
  },
  {
   "id": "hanging-leg-raise",
@@ -536,7 +536,7 @@
    "HLR"
   ],
   "kind": "Strength",
-  "equipment": "Dumbbell"
+  "equipment": "Pull-Up Bar"
  },
  {
   "id": "hollow-hold",
@@ -601,7 +601,7 @@
    "Front Plank",
    "Forearm Plank"
   ],
-  "kind": "Strength",
+  "kind": "Time",
   "equipment": "Bodyweight"
  },
  {
@@ -643,7 +643,7 @@
   "id": "side-plank",
   "name": "Side Plank",
   "aliases": [],
-  "kind": "Strength",
+  "kind": "Time",
   "equipment": "Bodyweight"
  },
  {
@@ -1074,7 +1074,7 @@
   "name": "Seated Calf Raise",
   "aliases": [],
   "kind": "Strength",
-  "equipment": "Dumbbell"
+  "equipment": "Machine"
  },
  {
   "id": "single-leg-calf-raise",
@@ -2109,7 +2109,7 @@
   "aliases": [
    "Handstand"
   ],
-  "kind": "Strength",
+  "kind": "Time",
   "equipment": "Bodyweight"
  },
  {

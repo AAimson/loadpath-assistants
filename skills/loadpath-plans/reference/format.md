@@ -41,12 +41,19 @@ sends, so a plan never reaches the site's server.
         { "lift": "Dead Hang", "sets": 3, "seconds": 45 },
         { "lift": "Zone 2 Bike", "minutes": 20 }
       ]
+    },
+    {
+      "name": "Lower A",
+      "lifts": [
+        { "lift": "Back Squat", "sets": 3, "reps": 5, "rule": "linear", "step": 5, "rest": 180, "warmups": 2 },
+        { "lift": "Romanian Deadlift", "sets": 3, "reps": 8, "repsTo": 12 }
+      ]
     }
   ],
   "program": {
     "name": "Upper / Lower",
     "repeat": 0,
-    "weeks": [ { "days": ["Upper A", null, "Lower A", null] } ]
+    "weeks": [ { "days": ["Upper A", "Lower A", null, "Upper A", "Lower A", null, null] } ]
   }
 }
 ```
@@ -54,7 +61,7 @@ sends, so a plan never reaches the site's server.
 | Field | Meaning |
 |---|---|
 | `loadpath` | The format's version: `1` for everything on this page. Loadpath refuses a number it doesn't know and asks the lifter to update. |
-| `unit` | `"kg"` or `"lb"`, for every `weight` and `step`. **Required** when the plan has either: Loadpath refuses a weight or a step with no unit rather than guess, and refuses any other unit. |
+| `unit` | `"kg"` or `"lb"`, for every `weight` and `step`. **Required** when the plan has either: Loadpath refuses a weight or a step with no unit rather than guess, and refuses any other unit. Absent, the plan is in kg, so a `step` left out is 2.5 kg: give `"lb"` for a lifter who lifts in pounds even when no lift has a step. |
 | `workouts` | One or more, each with a `name` and at least one lift, in order. |
 | `program` | Optional. Its `weeks` each list `days`: a workout's `name`, or `null` for a rest day. A day naming a workout that isn't in `workouts` is refused. The days run in order, rest days included, so list all seven for a calendar week. A week may have a `name`; the program may have a `detail`, a line describing it. `repeat` is how many times the weeks run; `0` or absent runs until the lifter ends it. |
 
@@ -65,9 +72,9 @@ A lift:
 | `lift` | The exercise's name. Use Loadpath's name when you know it ("Bench Press", "Romanian Deadlift"); a close spelling is matched, and the lifter is asked about anything else. A lift is matched by name among Loadpath's lifts with the same kind of set (sets × reps, minutes, or seconds): a timed lift only matches a library lift that is timed. |
 | `id` | Optional. Loadpath's id for the exercise, when you know it. It never overrides the name unseen: when the two don't agree, the lifter is shown the row to check. |
 | `sets`, `reps` | Working sets and reps (the short form; or give `setList`). Required for a strength lift (1–20 sets, 1–100 reps), except under `"rule": "stages"` or `"rule": "percent"`, which are refused with them. For a one-arm or one-leg lift, `reps` are per side. |
-| `repsTo` | The top of a rep range: `"reps": 8, "repsTo": 12` is 8–12. |
-| `rule` | `"linear"`: add `step` when every rep lands. `"double"`: add reps up to `repsTo`, then add `step` and start again at `reps`. `"none"`: no automatic change. Left out, it is `double` with a `repsTo` and `linear` without. `"percent"`: percent of training max, each set in `setList` gives its `percent`. `"stages"`: a GZCLP tier, with `stages`. |
-| `step` | How much weight to add. Left out, Loadpath's default (2.5 kg or 5 lb). |
+| `repsTo` | The top of a rep range: `"reps": 8, "repsTo": 12` is 8–12. Under `double`, `reps` and `repsTo` are at most 60, where the editor's range stops. |
+| `rule` | `"linear"`: add `step` when every rep lands. `"double"`: add reps up to `repsTo`, then add `step` and start again at `reps`. `"none"`: no automatic change. Left out, or a word this page doesn't list, it is `double` with a `repsTo` and `linear` without. `"percent"`: percent of training max, each set in `setList` gives its `percent`. `"stages"`: a GZCLP tier, with `stages`. |
+| `step` | How much weight to add. Left out, Loadpath's default: 2.5 kg, or 5 lb in a plan whose `unit` is `"lb"`. |
 | `weight` | A starting weight. Leave it out: Loadpath then starts from the lifter's own history. For a lift done with two dumbbells or kettlebells it is the weight of **one**; Loadpath converts for a lifter who counts the pair. |
 | `rest` | Seconds between sets, 0–3600. |
 | `warmups` | How many warm-up sets Loadpath adds before the working sets, 0–10. |
@@ -75,7 +82,7 @@ A lift:
 | `setList` | Instead of `sets`, `reps` and `amrap`: the working sets one by one (below). |
 | `repsOnly` | `true`: logged as reps only, no weight. A lift Loadpath creates for it logs reps only. |
 | `group` | Lifts in a workout with the same label are done as a superset (see Supersets and circuits). Lifts in one group are evened out to the same number of sets (the larger count) when saved. |
-| `seconds` | A timed exercise: seconds per set, with `sets` (1–20). |
+| `seconds` | A timed exercise: seconds per set, with `sets` (1–20; absent is 1). |
 | `minutes`, `km` | A cardio exercise. |
 | `kcal` | A cardio lift's calorie target. A whole number. |
 
@@ -178,23 +185,3 @@ A plan that needs something this page doesn't describe is not version 1. Anythin
 changes what Loadpath builds gets a new `loadpath` number, so an app that doesn't know it
 says "update the app" rather than save a different plan. Write the lowest version that
 carries the plan: a version 1 plan opens in every Loadpath that reads plans.
-
-## What Share as Link sends
-
-Share as Link in Loadpath sends every plan Loadpath builds except these, which it refuses
-and says why: custom GZCLP stages, a timed exercise with no time set, an exercise with no
-sets, more than 20 sets in an exercise, a circuit with more than 20 rounds, more than 10
-drops on a set, and a drop with no reps.
-
-Don't add fields this page doesn't describe: an app reading version 1 would drop the
-field and save the plan without it. Anything new that changes what is built gets a new
-`loadpath` number.
-
-Warm-up sets planned by hand travel as a count in `warmups` (at most 5), since their
-weights are the sender's own. Two workouts in a program with the same name go as "Upper"
-and "Upper 2".
-
-Share as Link shows what the link says differently from the plan in the app (warm-ups
-as a count, a renamed workout, a double-progression lift at the bottom of its range, a
-lift that goes outside its group; and, for a session, a lift left out because no working sets were logged for it, and a top set the format can't hold going as plain sets) and a QR code of the link when it fits in one
-(2,953 bytes). A finished session shares as one workout, its sets as done.
