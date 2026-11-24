@@ -3,11 +3,13 @@
 
     python3 tools/sync_from_app.py ../fitness-app
 
-Writes, under skills/loadpath-plans/:
-  scripts/lifts.json    the catalogue's names, aliases, kinds and equipment
-  reference/lifts.md    the same, as tables by category
-  reference/format.md   docs/plan-format.md, without "What Share as Link sends"
-                        (how the app shares a plan, which a plan's writer doesn't need)
+Writes:
+  tools/lifts.json                                  the catalogue's names, aliases, kinds and
+                                                    equipment, for tools/build_link.py
+  plugin/skills/loadpath-plans/reference/lifts.md   the same, as tables by category
+  plugin/skills/loadpath-plans/reference/format.md  docs/plan-format.md, without "What Share as
+                                                    Link sends" (how the app shares a plan,
+                                                    which a plan's writer doesn't need)
 
 Run it whenever the app's ExerciseCatalog.json or docs/plan-format.md changes, and
 commit what changes.
@@ -17,7 +19,7 @@ import os
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKILL = os.path.join(ROOT, "skills", "loadpath-plans")
+SKILL = os.path.join(ROOT, "plugin", "skills", "loadpath-plans")
 
 KIND = {"Strength": "sets × reps", "Reps": "sets × reps, no weight", "Time": "seconds", "Cardio": "minutes / km"}
 
@@ -64,11 +66,12 @@ def main():
         lifts_json, lifts_md = lifts(json.load(f))
     with open(os.path.join(app, "docs", "plan-format.md"), encoding="utf-8") as f:
         format_md = format_doc(f.read())
-    for path, text in [("scripts/lifts.json", lifts_json), ("reference/lifts.md", lifts_md),
-                       ("reference/format.md", format_md)]:
-        with open(os.path.join(SKILL, path), "w", encoding="utf-8") as f:
+    for path, text in [(os.path.join(ROOT, "tools", "lifts.json"), lifts_json),
+                       (os.path.join(SKILL, "reference", "lifts.md"), lifts_md),
+                       (os.path.join(SKILL, "reference", "format.md"), format_md)]:
+        with open(path, "w", encoding="utf-8") as f:
             f.write(text)
-        print(f"wrote {path}")
+        print(f"wrote {os.path.relpath(path, ROOT)}")
     return 0
 
 

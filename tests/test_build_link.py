@@ -6,15 +6,19 @@ ACCEPTED and REFUSED mirror the fixtures in fitness-app's FitnessAppTests/PlanDo
 which run PlanDocument.validated(): when those tests change, change these to match.
 """
 import base64
+import contextlib
+import io
 import json
 import os
+import re
 import subprocess
 import sys
 import unittest
 import zlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SCRIPT = os.path.join(ROOT, "skills", "loadpath-plans", "scripts", "build_link.py")
+SCRIPT = os.path.join(ROOT, "tools", "build_link.py")
+SKILL = os.path.join(ROOT, "plugin", "skills", "loadpath-plans")
 sys.path.insert(0, os.path.dirname(SCRIPT))
 import build_link  # noqa: E402
 
@@ -300,6 +304,33 @@ class Link(unittest.TestCase):
         result = run(text)
         self.assertEqual(result.returncode, 2, result.stderr)
         self.assertEqual(json.loads(result.stdout), json.loads(text))
+
+
+class TheSkillsDocs(unittest.TestCase):
+    """The skill ships no script: Claude checks a plan against format.md and builds its link
+    with the code in SKILL.md, so both have to be right."""
+
+    def read(self, name):
+        with open(os.path.join(SKILL, name), encoding="utf-8") as f:
+            return f.read()
+
+    def test_format_examples_are_plans_the_app_takes(self):
+        text = self.read("reference/format.md")
+        document = re.search(r"## The document\n\n```json\n(.*?)```", text, re.S).group(1)
+        self.assertEqual(build_link.check(json.loads(document))[0], [])
+        snippets = re.findall(r'```json\n(\{ "lift".*?)```', text, re.S)
+        self.assertTrue(snippets)
+        for snippet in snippets:
+            plan = {"loadpath": 1, "unit": "kg", "workouts": [{"name": "A", "lifts": [json.loads(snippet)]}]}
+            self.assertEqual(build_link.check(plan)[0], [], snippet)
+
+    def test_the_skills_link_code_opens_the_plan(self):
+        code = re.search(r"```python\n(.*?)```", self.read("SKILL.md"), re.S).group(1)
+        plan = json.loads(Link.PLAN)
+        scope = {"plan": plan}
+        with contextlib.redirect_stdout(io.StringIO()):
+            exec(code, scope)
+        self.assertEqual(scope["link"], build_link.encode(plan)[1])
 
 
 if __name__ == "__main__":
