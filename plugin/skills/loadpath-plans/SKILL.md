@@ -6,8 +6,8 @@ description: Build a strength training workout or program and hand back a link t
 # Loadpath plans
 
 Loadpath opens a plan from a link as a preview; nothing is saved until the lifter taps
-Save. Your job: write the plan in Loadpath's format, run the script that checks it and
-builds the link, and give the lifter the link.
+Save. Your job: write the plan in Loadpath's format, check it, build the link with code,
+and give the lifter the link.
 
 ## 1. Settle what you need
 
@@ -47,26 +47,45 @@ Read `reference/format.md` for the format and `reference/lifts.md` for the lifts
   with `null` for rest days. A program repeats its `weeks`; one week is enough for a
   plan that doesn't change week to week. A deload week has `"deload": 60` (its weight
   as a percent, 30–95); add `"deloadFewerSets": true` to also drop one set from every lift.
-- Write only fields `reference/format.md` describes; the script warns about any other.
+- Write only fields `reference/format.md` describes; Loadpath drops any other.
 
-## 3. Build the link
+## 3. Check the plan
 
-Save the JSON to a file and run:
+Loadpath refuses the whole plan over one value it can't build. Check against
+`reference/format.md`, above all:
 
-```bash
-python3 scripts/build_link.py plan.json
+- `sets`, `reps`, `repsTo`, `rest`, `warmups` and `kcal` are whole numbers: sets 1–20,
+  reps 1–100, `rest` 0–3600, `warmups` 0–10.
+- A rep range (`repsTo`, or `"rule": "double"`): `reps` ≤ `repsTo` ≤ 60.
+- Every `lift` is spelled as in `reference/lifts.md` and written with its kind's fields.
+- `setList`: no `sets`, `reps` or `amrap` beside it; at most one `top`, every set after
+  it with a `backoff` and none before it; under a rep range, every set that isn't a
+  back-off has the same reps.
+- `"rule": "percent"`: a `setList` with a `percent` (up to 150) on each set, and no
+  `repsTo` or `weight`. A set's `wave` (1–3) needs its `percent`.
+- `"rule": "stages"`: `"stages"` is `"t1"`, `"t2"` or `"t3"`, with no `sets`, `reps`,
+  `repsTo`, `amrap` or `setList`.
+- `groups`: each entry's `group` is a label a lift in that workout uses; `rest` 15–600,
+  `rounds` 0–20.
+- The program has a `name`, and every day is a workout's `name` or `null`. A week's
+  `wave` is `"5s"`, `"3s"`, `"531"` or `"deload"`; `deload` is 30–95 (60, not 0.6), and
+  `deloadFewerSets` comes only with it; `autoDeload` is 2–12.
+
+## 4. Build the link
+
+Run this with the plan, as format.md describes:
+
+```python
+import base64, json, zlib
+raw = json.dumps(plan, separators=(",", ":")).encode()
+c = zlib.compressobj(9, zlib.DEFLATED, -15)
+link = "https://getloadpath.com/import#z=" + base64.urlsafe_b64encode(c.compress(raw) + c.flush()).decode().rstrip("=")
+print(len(link), link)
 ```
 
-- **ERROR** lines: Loadpath would refuse the plan. Fix them and run it again.
-- **WARNING** lines: Loadpath takes the plan but reads it differently from what you
-  likely meant: a lift name it won't match by itself, a field it would drop, a `rule`
-  word it doesn't know, or no `unit`. Switch to the suggested Loadpath lift when it is
-  the same exercise, remove unknown fields, use a listed rule, add the unit, and run it
-  again. Keep an unlisted name only when no listed lift is the same exercise; the
-  lifter will match it in the app.
-- Exit code 2 prints the plan as JSON instead of a link, because the link would be too long.
+A link over 4,000 characters is too long: give the JSON instead (below).
 
-## 4. Reply
+## 5. Reply
 
 1. The plan in plain words: each workout's lifts with sets × reps, and how it progresses.
    Keep it short.
@@ -75,7 +94,7 @@ python3 scripts/build_link.py plan.json
 3. If they don't have Loadpath: it's free on the App Store,
    https://apps.apple.com/app/apple-store/id6764851498?pt=1053933&ct=claude-skill&mt=8
 
-**If you can't run code**, or the script gave JSON: give the plan's JSON in a code block
+**If you can't run code**, or the link is too long: give the plan's JSON in a code block
 and tell the lifter to copy it, then in Loadpath tap Train → + → Import from Text.
 Never write a link by hand; it holds compressed data you can't produce reliably without
-the script.
+running code.
