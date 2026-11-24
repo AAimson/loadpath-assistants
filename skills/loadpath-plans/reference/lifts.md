@@ -84,8 +84,8 @@ or `setList`), seconds (`sets` + `seconds`) or minutes / km (`minutes`, `km`).
 | Farmer Carry | `farmer-carry` | sets × reps | Dumbbell | Farmers Walk, Farmer's Walk, Farmers Carry |
 | Farmer Carry (Heavy) | `farmer-carry-heavy` | sets × reps | Dumbbell |  |
 | Flutter Kick | `flutter-kick` | seconds | Bodyweight |  |
-| Hanging Knee Raise | `hanging-knee-raise` | sets × reps | Dumbbell |  |
-| Hanging Leg Raise | `hanging-leg-raise` | sets × reps | Dumbbell | HLR |
+| Hanging Knee Raise | `hanging-knee-raise` | sets × reps | Pull-Up Bar |  |
+| Hanging Leg Raise | `hanging-leg-raise` | sets × reps | Pull-Up Bar | HLR |
 | Hollow Hold | `hollow-hold` | seconds | Bodyweight | Hollow Body Hold |
 | Knees to Chest | `knees-to-chest` | sets × reps | Pull-Up Bar |  |
 | L-Sit | `l-sit` | seconds | Rings |  |
@@ -93,13 +93,13 @@ or `setList`), seconds (`sets` + `seconds`) or minutes / km (`minutes`, `km`).
 | Mountain Climber | `mountain-climber` | sets × reps | Bodyweight | Mountain Climbers |
 | Overhead Carry | `overhead-carry` | sets × reps | Dumbbell | Waiter Walk, Overhead Walk |
 | Pallof Press | `pallof-press` | sets × reps | Cable |  |
-| Plank | `plank` | sets × reps | Bodyweight | Front Plank, Forearm Plank |
+| Plank | `plank` | seconds | Bodyweight | Front Plank, Forearm Plank |
 | Plank Up-Down | `plank-up-down` | sets × reps | Bodyweight |  |
 | Renegade Row | `renegade-row` | sets × reps | Dumbbell |  |
 | Reverse Crunch | `reverse-crunch` | sets × reps | Bodyweight |  |
 | Russian Twist | `russian-twist` | sets × reps | Bodyweight |  |
 | Sandbag Carry | `sandbag-carry` | sets × reps | Sandbag |  |
-| Side Plank | `side-plank` | sets × reps | Bodyweight |  |
+| Side Plank | `side-plank` | seconds | Bodyweight |  |
 | Sit-Up | `sit-up` | sets × reps | Bodyweight | Situp, Sit Ups |
 | Suitcase Carry | `suitcase-carry` | sets × reps | Dumbbell |  |
 | Superman | `superman` | sets × reps | Bodyweight |  |
@@ -164,7 +164,7 @@ or `setList`), seconds (`sets` + `seconds`) or minutes / km (`minutes`, `km`).
 | Pendulum Squat | `pendulum-squat` | sets × reps | Machine |  |
 | Pistol Squat | `pistol-squat` | sets × reps | Bodyweight | Single Leg Squat |
 | Reverse Lunge | `reverse-lunge` | sets × reps | Bodyweight |  |
-| Seated Calf Raise | `seated-calf-raise` | sets × reps | Dumbbell |  |
+| Seated Calf Raise | `seated-calf-raise` | sets × reps | Machine |  |
 | Single-Leg Calf Raise | `single-leg-calf-raise` | sets × reps | Bodyweight |  |
 | Single-Leg Leg Extension | `single-leg-leg-extension` | sets × reps | Machine |  |
 | Single-Leg Leg Press | `single-leg-leg-press` | sets × reps | Machine |  |
@@ -317,7 +317,7 @@ or `setList`), seconds (`sets` + `seconds`) or minutes / km (`minutes`, `km`).
 | Dumbbell Pullover | `dumbbell-pullover` | sets × reps | Dumbbell |  |
 | Dumbbell Shoulder Press | `dumbbell-shoulder-press` | sets × reps | Dumbbell |  |
 | Front Raise | `front-raise` | sets × reps | Dumbbell |  |
-| Handstand Hold | `handstand-hold` | sets × reps | Bodyweight | Handstand |
+| Handstand Hold | `handstand-hold` | seconds | Bodyweight | Handstand |
 | Handstand Push-Up | `handstand-push-up` | sets × reps | Bodyweight | HSPU |
 | Incline Bench Press | `incline-bench-press` | sets × reps | Barbell |  |
 | Incline Cable Fly | `incline-cable-fly` | sets × reps | Cable |  |
