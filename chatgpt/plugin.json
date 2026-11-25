@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "loadpath",
+  "version": "1.1.0",
+  "description": "Build a strength training workout or program and get a link that opens it in Loadpath, the iPhone strength training app.",
+  "author": { "name": "Loadpath", "url": "https://getloadpath.com" },
+  "homepage": "https://getloadpath.com",
+  "repository": "https://github.com/AAimson/loadpath-assistants",
+  "keywords": ["fitness", "strength training", "workout", "program", "gym"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Loadpath",
+        "shortDescription": "Strength plans for Loadpath",
+        "longDescription": "Ask for a workout or a program (5/3/1, GZCLP, push/pull/legs, upper/lower, full body, a beginner plan) and get a link that opens it in Loadpath, the iPhone strength training app.\n\nThe plan is written in Loadpath's own format: lifts by the names in Loadpath's library, sets and reps, and progression Loadpath runs for you: adding weight when every rep lands, rep ranges, 5/3/1 training maxes and GZCLP tiers. Weights come from your own history in the app, so the plan works for any lifter.\n\nThe link opens the plan as a preview in Loadpath 2.7 or later, and nothing is saved until you tap Save. Without the app, it opens a page that shows the plan and how to get Loadpath. Where code can't run, you get the plan as text to paste into Train → + → Import from Text.",
+        "developerName": "Loadpath",
+        "category": "Health & Fitness",
+        "capabilities": ["Build workouts and programs", "Link a plan to open in Loadpath"],
+        "websiteURL": "https://getloadpath.com",
+        "supportURL": "https://getloadpath.com/support",
+        "privacyPolicyURL": "https://getloadpath.com/privacy",
+        "defaultPrompt": ["Build me a 3-day full-body beginner plan for Loadpath"],
+        "brandColor": "#FF2E3D",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

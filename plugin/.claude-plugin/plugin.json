@@ -4,7 +4,7 @@
   "description": "Build a strength training workout or program and get a link that opens it in Loadpath, the iPhone strength training app.",
   "author": { "name": "Loadpath" },
   "homepage": "https://getloadpath.com",
-  "repository": "https://github.com/AAimson/loadpath-claude",
+  "repository": "https://github.com/AAimson/loadpath-assistants",
   "privacyPolicyUrl": "https://getloadpath.com/privacy",
   "supportUrl": "https://getloadpath.com/support",
   "keywords": ["fitness", "strength training", "workout", "program", "gym"]

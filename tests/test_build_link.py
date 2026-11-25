@@ -19,8 +19,10 @@ import zlib
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCRIPT = os.path.join(ROOT, "tools", "build_link.py")
 SKILL = os.path.join(ROOT, "plugin", "skills", "loadpath-plans")
+CHATGPT = os.path.join(ROOT, "chatgpt")
 sys.path.insert(0, os.path.dirname(SCRIPT))
 import build_link  # noqa: E402
+import make_chatgpt  # noqa: E402
 
 
 def plan(lift):
@@ -331,6 +333,38 @@ class TheSkillsDocs(unittest.TestCase):
         with contextlib.redirect_stdout(io.StringIO()):
             exec(code, scope)
         self.assertEqual(scope["link"], build_link.encode(plan)[1])
+
+
+class TheChatGPTPlugin(unittest.TestCase):
+    """chatgpt/ is written by tools/make_chatgpt.py; a skill edited in plugin/ without
+    running it leaves ChatGPT on the old skill."""
+
+    def test_its_skill_is_the_claude_skill_for_chatgpt(self):
+        target = os.path.join(CHATGPT, "skills", "loadpath-plans")
+        for folder, _, files in os.walk(SKILL):
+            for name in files:
+                path = os.path.join(folder, name)
+                with open(path, encoding="utf-8") as f:
+                    expected = f.read()
+                if name == "SKILL.md":
+                    expected = make_chatgpt.for_chatgpt(expected)
+                copy = os.path.join(target, os.path.relpath(path, SKILL))
+                with open(copy, encoding="utf-8") as f:
+                    self.assertEqual(f.read(), expected, f"{copy}: run tools/make_chatgpt.py")
+        self.assertIn("ct=chatgpt", open(os.path.join(target, "SKILL.md"), encoding="utf-8").read())
+
+    def test_its_manifest_fits_the_portal(self):
+        with open(os.path.join(CHATGPT, "plugin.json"), encoding="utf-8") as f:
+            manifest = json.load(f)
+        with open(os.path.join(ROOT, "plugin", ".claude-plugin", "plugin.json"), encoding="utf-8") as f:
+            self.assertEqual(manifest["version"], json.load(f)["version"])
+        self.assertRegex(manifest["name"], r"^[a-z0-9]+(-[a-z0-9]+)*$")
+        ui = manifest["extensions"]["com.openai"]["interface"]
+        for field, limit in [("displayName", 30), ("shortDescription", 30), ("longDescription", 4000),
+                             ("developerName", 80)]:
+            self.assertTrue(0 < len(ui[field]) <= limit, field)
+        for field in ("composerIcon", "logo"):
+            self.assertTrue(os.path.isfile(os.path.join(CHATGPT, ui[field])), ui[field])
 
 
 if __name__ == "__main__":
