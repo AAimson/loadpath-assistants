@@ -10,6 +10,7 @@ Writes:
   plugin/skills/loadpath-plans/reference/format.md  docs/plan-format.md, without "What Share as
                                                     Link sends" (how the app shares a plan,
                                                     which a plan's writer doesn't need)
+  chatgpt/skills/loadpath-plans/                    the skill again, for ChatGPT (make_chatgpt.py)
 
 Run it whenever the app's ExerciseCatalog.json or docs/plan-format.md changes, and
 commit what changes.
@@ -17,6 +18,8 @@ commit what changes.
 import json
 import os
 import sys
+
+import make_chatgpt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILL = os.path.join(ROOT, "plugin", "skills", "loadpath-plans")
@@ -72,7 +75,7 @@ def main():
         with open(path, "w", encoding="utf-8") as f:
             f.write(text)
         print(f"wrote {os.path.relpath(path, ROOT)}")
-    return 0
+    return make_chatgpt.main()
 
 
 if __name__ == "__main__":
